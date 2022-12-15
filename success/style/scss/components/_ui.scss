@@ -1,0 +1,135 @@
+// fonts 
+body{
+    background: #F0E9E3;
+    font-family: "Euclid Circular B", sans-serif;
+    font-weight: 400;
+}
+body, html{
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//btn ui
+
+.btn-ui-1{
+    font-weight: 500;
+    font-size: 12.7634px;
+    line-height: 140%;
+    color: #000000;
+    padding: 20px 16px;
+    border:none;
+    background: white;
+    cursor: pointer;
+}
+
+.btn-ui-2{
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: #000000;
+    padding: 31px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: solid 1px #000000;
+}
+
+.btn-ui-scroll{
+    padding: 27px;
+    border:solid 2px #C3BEB9;
+    border-radius: 50%;
+    position: relative;
+    transition: .1s ease-in-out;
+    &:active{
+        background: #c3c0be;
+    }
+    &:hover{
+        &::after{
+            // left: -60px;
+            left: -80px;
+            transform: translateY(-50%) rotate(70deg);
+            top:10%;
+        }
+        & > svg{
+            transform: rotate(-360deg);
+        }
+    }
+    &::after{
+        // border:solid 1px;
+        content: "";
+        transition: .3s ease-in-out;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 80px;
+        background: #F0E9E3;
+        z-index: 0;
+    }
+    & > svg{
+        position: relative;
+        transition: .5s ease-in-out;
+        z-index: 1;
+    }
+}
+
+// components
+
+header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    & > .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > .logo > img{
+            max-width: 200px;
+        }
+        & > .feedback{
+            display: flex;
+            align-items: center;
+            & > img{
+                width: 36px;
+                height: 36px;
+                object-fit: cover;
+                margin-right: 15px;
+            }
+            & > .info{
+                margin-right: 30px;
+                & > span{
+                    display: block;
+                    font-weight: 300;
+                    font-size: 11.7545px;
+                    line-height: 130%;
+                    text-align: right;
+                    color: rgba(0, 0, 0, 0.6);
+                    margin-bottom: 4px;
+                }
+                & > a{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 130%;
+                    text-align: right;
+                    color: #000000;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

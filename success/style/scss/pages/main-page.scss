@@ -252,6 +252,20 @@ main.main-page{
         background-size: 100%;
         padding-top: 120px;
         padding-bottom: 120px;
+        overflow: hidden;
+        &.white_theme{
+            background: white;
+            position: relative;
+            &::after{
+                content: url(/success/images/service/bg/bg_feedback.png);
+                background-size: 100%;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
         & > .container{
             & > h2{
                 font-family: 'Euclid Circular B';
@@ -305,4 +319,593 @@ main.main-page{
         }
     }
 
+    & > .section__ourWork{
+        background: white;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 70px;
+            }
+            & > .grid-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 95px 13px;
+                & > .wrapper{
+                    & > img{
+                        width: 100%;
+                        height: 524px;
+                        object-fit: cover;
+                        margin-bottom: 40px;
+                    }
+                    & > h3{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 41.3793px;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-bottom: 13px;
+                    }
+                    & > p{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22.069px;
+                        line-height: 140%;
+                        color: #000000;
+                        max-width: 259px;
+                    }
+                }
+            }
+            & > .button-wrapper{
+                display: flex;
+                justify-content: center;
+                margin-top: 70px;
+            }
+        }
+    }
+
+    & > .section__why{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 70px;
+                max-width: 846px;
+            }
+            & > .grid-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 30px;
+                & > .wrapper{
+                    padding: 69px;
+                    background: #E8DFD9;
+                    & > .header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        margin-bottom: 40px;
+                        & > .num{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 27.5862px;
+                            line-height: 140%;
+                            color: #DDAE8A;
+                        }
+                    }
+                    & > .main{
+                        display: flex;
+                        justify-content: space-between;
+                        & > h3{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 30.3448px;
+                            line-height: 140%;
+                            color: #000000; 
+                            margin-right: 19px;
+                            min-width: 300px;
+                        }
+                        & > p{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 22.069px;
+                            line-height: 140%;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & > .section__about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        overflow: hidden;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 70px;
+            }
+            & > .video__wrapper{
+                width: 100%;
+                position: relative;
+                & > video{
+                    width: 100%;
+                }
+                & > .play_video{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 12;
+                }
+                // plugin remake
+                & > .video_main-dimensions{
+                    max-width: 100%;
+                    width: 100%;
+                    & > video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                & > #video_main{
+                    position: relative;
+                    & > .vjs-control-bar{
+                        z-index: 10;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        display: flex;
+                        // tmp
+                        & * {
+                            color:white;
+                        }
+                    }
+                } 
+            }
+            & > .gallery_container{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 15px;
+                margin-top: 15px;
+                & > img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    & > .section__price{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        & > .container{
+            display: flex;
+            justify-content: space-between;
+            & > .left{
+                & > h2{
+                    font-family: 'Euclid Circular B';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 71px;
+                    line-height: 120%;
+                    color: #000000;
+                    margin-bottom: 50px;
+                }
+                & > p{
+                    font-family: 'Euclid Circular B';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 140%;
+                    max-width: 447px;
+                    color: #000000;
+                }
+            }
+            & > .right{
+                max-width: 600px;
+                & > form{
+                    display: flex;
+                    flex-direction: column;
+                    & > input{
+                        margin-bottom: 6px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    & > label{
+                        margin-top: 13px;
+                        margin-bottom: 40px;
+                        display: flex;
+                        position: relative;
+                        & > input[type=checkbox]{
+                            display: none;
+
+                            &:checked + span::before{
+                                opacity: 1;
+                            }
+                        }
+                        & > span{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15.1261px;
+                            line-height: 140%;
+                            color: #000000;
+                            padding-left: 40px;
+                            & > a{
+                                color: #DCB393;
+                                text-decoration: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            // checkbox fake
+
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                width: 27px;
+                                height: 27px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 0;
+                                background: transparent;
+                                border: solid 2px black;
+                            }
+                            
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 6px;
+                                background: black;
+                                transition: .1s ease-in-out;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    & > .section__sert{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 60px;
+            }
+            & > .swiper-container{
+                display: flex;
+                align-items: center;
+                & > #swiper-001-left{
+                    margin-right: 23px;
+                }
+                & > #swiper-001-right{
+                    margin-left: 23px;
+                }
+            }
+        }
+    }
+
+    & > .section__team{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 71px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 70px;
+            }
+            & > .container-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 82px 15px;
+                & > .wrapper{
+                    & > img{
+                        width: 100%;
+                        height: 689px;
+                        object-fit: cover;
+                        margin-bottom: 40px;
+                    }
+                    & > h3{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 27.5862px;
+                        line-height: 140%;
+                        color: #000000;
+                        margin-bottom: 13px;
+                    }
+                    & > p{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22.069px;
+                        line-height: 140%;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    & > .section__rewievs{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 71px;
+            }
+            & > .swiper-container{
+                display: flex;
+                align-items: center;
+                & > #swiper_002_left{
+                    margin-right: 20px;
+                }
+                & > #swiper_002_right{
+                    margin-left: 20px;
+                }
+                & > .swiper{
+                    width: 100%;
+                    & .swiper-slide > .wrapper{
+                        position: relative;
+                        background: #F9F5F2;
+                        padding: 27px;
+                        & > .num{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24.8196px;
+                            line-height: 140%;
+                            color: #000000;
+                            padding: 13px;
+                            background: #E1AA7F;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                        & > .header{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 27px;
+                            & > img{
+                                width: 95px;
+                                height: 95px;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                            }
+                            & > .info{
+                                & > h3{
+                                    font-family: 'Euclid Circular B';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 24.8196px;
+                                    line-height: 140%;
+                                    color: #000000;
+                                    margin-bottom: 0px;
+                                }
+                                & > .date{
+                                    font-family: 'Euclid Circular B';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 19.3041px;
+                                    line-height: 140%;
+                                    color: #E1AA7F;
+                                }
+                            }
+                        }
+                        & > p{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 19.3041px;
+                            line-height: 130%;
+                            color: #000000;
+                            max-width: 379px;
+                            & > a{
+                                color: #E1AA7F;
+                                text-decoration: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1600px){
+    main.main-page>.section__main>.container>.bottom-block>.left>h2{
+        font-size: 50px;
+        max-width: 356px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.left>p{
+        font-size: 16px;
+        max-width: 369px;
+    }
+    main.main-page>.background-images>.bg{
+        left: 52%;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.bg-images>.bg{
+        left: 395px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.right>p{
+        font-size: 16px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.right>p{
+        padding-left: 79px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.right>.warning{
+        font-size: 16px;
+        padding-left: 79px;
+    }
+    main.main-page>.section__types>.container>.header>h2{
+        font-size: 50px;
+        max-width: 690px;
+    }
+    main.main-page>.section__types>.container>.main>.wrapper:nth-child(2)>p,
+    main.main-page>.section__types>.container>.main>.wrapper:nth-child(3)>p,
+    main.main-page>.section__types>.container>.main>.wrapper:nth-child(4)>p,
+    main.main-page>.section__types>.container>.main>.wrapper:nth-child(1)>p{
+        max-width: 522px;
+    }
+    main.main-page>.section__feedback>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__ourWork>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__ourWork>.container>.grid-container>.wrapper>h3{
+        font-size: 30px;
+    }
+    main.main-page>.section__ourWork>.container>.grid-container>.wrapper>p{
+        font-size: 16px;
+        max-width: 188px;
+    }
+    main.main-page>.section__why>.container>h2{
+        font-size: 50px;
+        max-width: 644px;
+    }
+    main.main-page>.section__why>.container>.grid-container>.wrapper>.main>h3{
+        font-size: 22px;
+        min-width: 217px;
+    }
+    main.main-page>.section__why>.container>.grid-container>.wrapper>.main>p{
+        font-size: 16px;
+    }
+    main.main-page>.section__why>.container>.grid-container>.wrapper{
+        padding: 50px;
+    }
+    main.main-page>.section__about>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__price>.container>.left>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__price>.container>.left>p{
+        font-size: 20px;
+    }
+    main.main-page>.section__price>.container>.right{
+        max-width: 476px;
+    }
+    main.main-page>.section__price>.container>.right>form>input{
+        font-size: 16px;
+    }
+    main.main-page > .section__price > .container > .right > form > label > span{
+        font-size: 12px;
+    }
+    main.main-page>.section__sert>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__team>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__rewievs>.container>h2{
+        font-size: 50px;
+    }
+    main.main-page>.section__rewievs>.container>.swiper-container>.swiper .swiper-slide>.wrapper>.header>img{
+        width: 69px;
+        height: 69px;
+    }
+    main.main-page>.section__rewievs>.container>.swiper-container>.swiper .swiper-slide>.wrapper>.header>.info>h3{
+        font-size: 18px;
+    }
+    main.main-page>.section__rewievs>.container>.swiper-container>.swiper .swiper-slide>.wrapper>.header>.info>.date{
+        font-size: 14px;
+    }
+    main.main-page>.section__rewievs>.container>.swiper-container>.swiper .swiper-slide>.wrapper>p{
+        font-size: 14px;
+    }
+    main.main-page>.section__rewievs>.container>.swiper-container>.swiper .swiper-slide>.wrapper>.num{
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width:1400px){
+    .btn-ui-scroll{
+        display: none   ;
+    }
+
+    main.main-page>.section__main > .container > .header-block{
+        padding-bottom: 800px;
+    }
+    main.main-page>.background-images>.bg{
+        left: 0;
+        top: 700px;
+        height: 844px;
+        width: 100%;
+        object-fit: cover;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.bg-images>.bg{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 18px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.right>p{
+        max-width: 323px;
+        padding-left: 40px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.right>.warning > p{
+        max-width: 323px;
+    }
+    main.main-page>.section__main>.container>.bottom-block>.bg-images>.bg > img{
+        height: 652px;
+    }
 }

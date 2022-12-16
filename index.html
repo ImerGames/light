@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/success/style/style.min.css">
     <!-- todo meta desk-->
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="crossorigin="anonymous"></script>
     <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -345,18 +347,264 @@
             <div class="container">
                 <h2>О нашем производстве</h2>
                 <div class="video__wrapper">
-                    <button class="btn-ui-none play_video">
+                    <!-- <button class="btn-ui-none play_video">
                         <svg width="235" height="235" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M117.624 234.183C182.263 234.183 234.663 181.782 234.663 117.143C234.663 52.5039 182.263 0.103516 117.624 0.103516C52.9844 0.103516 0.583984 52.5039 0.583984 117.143C0.583984 181.782 52.9844 234.183 117.624 234.183ZM98.6907 151.817L157.555 117.832L98.6907 83.8464V151.817Z" fill="white"/>
                         </svg>                            
-                    </button>
-                    <video id="video_main">
+                    </button> -->
+                    <video controls>
                         <source src="/success/images/resourse/1.mp4" type="video/mp4">
                     </video>
                 </div>
+                <div class="gallery_container">
+                    <img src="/success/images/resourse/gallery/1.png" alt="img"/>
+                    <img src="/success/images/resourse/gallery/2.png" alt="img"/>
+                    <img src="/success/images/resourse/gallery/3.png" alt="img"/>
+                    <img src="/success/images/resourse/gallery/4.png" alt="img"/>
+                    <img src="/success/images/resourse/gallery/5.png" alt="img"/>
+                    <img src="/success/images/resourse/gallery/6.png" alt="img"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__price">
+            <div class="container">
+                <div class="left">
+                    <h2>Рассчет стоимости</h2>
+                    <p>Оставьте заявку на расчет и получите за это скидку 10%. Чтобы получить расчет, впишите Ваше имя и телефон:</p>
+                </div>
+                <div class="right">
+                    <form action="/" class="form--data">
+                        <input type="name" name="name" class="btn-ui-form" placeholder="Ваше имя" />
+                        <input type="phone" name="phone" class="btn-ui-form" placeholder="Ваш телефон" />
+                        <label for="polic-check" class="checkbox-ui">
+                            <input type="checkbox" name="polic-check" id="polic-check" />
+                            <span>Нажимая на кнопку ниже, Вы даете согласие на обработку своих персональных данных и согласие с <a href="#" target="_blank">Политикой Конфиденциальности</a></span>
+                        </label>
+                        <button type="submit" class="btn-ui-3">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__sert">
+            <div class="container">
+                <h2>Сертификаты</h2>
+
+                <div class="swiper-container">
+                    <button class="btn-ui-none" id="swiper-001-left">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50.1562" height="50.1562" rx="25.0781" transform="matrix(-1 0 0 1 50.1562 0.696289)" fill="#EBCBB2"/>
+                            <path d="M18.9752 25.2707L27.351 17.0697C27.5447 16.8798 27.8033 16.7753 28.0791 16.7753C28.3548 16.7753 28.6134 16.8798 28.8071 17.0697L29.4239 17.6735C29.8253 18.0669 29.8253 18.7064 29.4239 19.0993L22.3906 25.986L29.4317 32.8804C29.6255 33.0702 29.7324 33.3232 29.7324 33.5931C29.7324 33.8632 29.6255 34.1163 29.4317 34.3063L28.8149 34.9099C28.621 35.0998 28.3626 35.2043 28.0869 35.2043C27.8111 35.2043 27.5525 35.0998 27.3588 34.9099L18.9752 26.7014C18.781 26.511 18.6744 26.2567 18.675 25.9864C18.6744 25.7151 18.781 25.461 18.9752 25.2707Z" fill="#121212"/>
+                        </svg>                            
+                    </button>
+
+                    <div class="swiper" id="swiper_001">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <img src="/success/images/resourse/sert/1.png" alt="s"/>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <img src="/success/images/resourse/sert/1.png" alt="s"/>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <img src="/success/images/resourse/sert/1.png" alt="s"/>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <img src="/success/images/resourse/sert/1.png" alt="s"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-ui-none" id="swiper-001-right">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50.1562" height="50.1562" rx="25.0781" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0.84375 50.8528)" fill="#EBCBB2"/>
+                            <path d="M32.0248 26.2782L23.649 34.4793C23.4553 34.6691 23.1967 34.7737 22.9209 34.7737C22.6452 34.7737 22.3866 34.6691 22.1929 34.4793L21.5761 33.8755C21.1747 33.482 21.1747 32.8425 21.5761 32.4497L28.6094 25.563L21.5683 18.6686C21.3745 18.4788 21.2676 18.2257 21.2676 17.9559C21.2676 17.6857 21.3745 17.4327 21.5683 17.2427L22.1851 16.639C22.379 16.4492 22.6374 16.3446 22.9131 16.3446C23.1889 16.3446 23.4475 16.4492 23.6412 16.639L32.0248 24.8475C32.219 25.038 32.3256 25.2922 32.325 25.5625C32.3256 25.8339 32.219 26.088 32.0248 26.2782Z" fill="#121212"/>
+                        </svg>                                                       
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section__team">
+            <div class="container">
+                <h2>Наша команда</h2>
+                <div class="container-grid">
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/success/images/resourse/team/1.png" alt="team"/>
+                        <h3>Имя Фамилия</h3>
+                        <p>Должность</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__rewievs">
+            <div class="container">
+                <h2>Отзывы наших клиентов</h2>
+                <div class="swiper-container">
+                    <button class="btn-ui-none" id="swiper_002_left">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50.1562" height="50.1562" rx="25.0781" transform="matrix(-1 0 0 1 50.1562 0)" fill="#EBCBB2"/>
+                            <path d="M18.9752 24.5745L27.351 16.3735C27.5447 16.1837 27.8033 16.0791 28.0791 16.0791C28.3548 16.0791 28.6134 16.1837 28.8071 16.3735L29.4239 16.9773C29.8253 17.3708 29.8253 18.0102 29.4239 18.4031L22.3906 25.2898L29.4317 32.1842C29.6255 32.374 29.7324 32.6271 29.7324 32.8969C29.7324 33.1671 29.6255 33.4201 29.4317 33.6101L28.8149 34.2138C28.621 34.4036 28.3626 34.5082 28.0869 34.5082C27.8111 34.5082 27.5525 34.4036 27.3588 34.2138L18.9752 26.0053C18.781 25.8148 18.6744 25.5606 18.675 25.2903C18.6744 25.0189 18.781 24.7648 18.9752 24.5745Z" fill="#121212"/>
+                        </svg>                            
+                    </button>
+                    <div class="swiper" id="swiper_002">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="num">01</div>
+                                    <div class="header">
+                                        <img src="/success/images/resourse/rews/1.png" alt="logo"/>
+                                        <div class="info">
+                                            <h3>Имя клиента</h3>
+                                            <span class="date">12.11.2022</span>
+                                        </div>
+                                    </div>
+                                    <p>Купила у вас зеркало для своей ванны и я осталась только довольна. Она отлично вписывается в нашц стилистику ванны... <a href="#">Читать подробнее</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="num">01</div>
+                                    <div class="header">
+                                        <img src="/success/images/resourse/rews/1.png" alt="logo"/>
+                                        <div class="info">
+                                            <h3>Имя клиента</h3>
+                                            <span class="date">12.11.2022</span>
+                                        </div>
+                                    </div>
+                                    <p>Купила у вас зеркало для своей ванны и я осталась только довольна. Она отлично вписывается в нашц стилистику ванны... <a href="#">Читать подробнее</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="num">01</div>
+                                    <div class="header">
+                                        <img src="/success/images/resourse/rews/1.png" alt="logo"/>
+                                        <div class="info">
+                                            <h3>Имя клиента</h3>
+                                            <span class="date">12.11.2022</span>
+                                        </div>
+                                    </div>
+                                    <p>Купила у вас зеркало для своей ванны и я осталась только довольна. Она отлично вписывается в нашц стилистику ванны... <a href="#">Читать подробнее</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="num">01</div>
+                                    <div class="header">
+                                        <img src="/success/images/resourse/rews/1.png" alt="logo"/>
+                                        <div class="info">
+                                            <h3>Имя клиента</h3>
+                                            <span class="date">12.11.2022</span>
+                                        </div>
+                                    </div>
+                                    <p>Купила у вас зеркало для своей ванны и я осталась только довольна. Она отлично вписывается в нашц стилистику ванны... <a href="#">Читать подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-ui-none" id="swiper_002_right">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50.1562" height="50.1562" rx="25.0781" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0.84375 51)" fill="#EBCBB2"/>
+                            <path d="M32.0248 26.4255L23.649 34.6265C23.4553 34.8163 23.1967 34.9209 22.9209 34.9209C22.6452 34.9209 22.3866 34.8163 22.1929 34.6265L21.5761 34.0227C21.1747 33.6292 21.1747 32.9898 21.5761 32.5969L28.6094 25.7102L21.5683 18.8158C21.3745 18.626 21.2676 18.3729 21.2676 18.1031C21.2676 17.8329 21.3745 17.5799 21.5683 17.3899L22.1851 16.7862C22.379 16.5964 22.6374 16.4918 22.9131 16.4918C23.1889 16.4918 23.4475 16.5964 23.6412 16.7862L32.0248 24.9947C32.219 25.1852 32.3256 25.4394 32.325 25.7097C32.3256 25.9811 32.219 26.2352 32.0248 26.4255Z" fill="#121212"/>
+                        </svg>                                                       
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__feedback white_theme">
+            <div class="container">
+                <h2>Чтобы задать вопрос или оформить заявку, нажмите на кнопку:</h2>
+                <div class="wrapper-button">
+                    <button class="btn-ui-2">Задать вопрос</button>
+                    <button class="btn-ui-2">Задать вопрос</button>
+                    <button class="btn-ui-2">Оформить заявку</button>
+                </div>
+                <p>Или звоните по телефону: 
+                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="23.4443" cy="23.0517" r="22.5244" fill="#EBCBB2"/>
+                        <path d="M29.897 26.2374L27.9924 24.3368C27.3122 23.658 26.1558 23.9296 25.8837 24.812C25.6796 25.4229 24.9994 25.7623 24.3872 25.6265C23.0268 25.2871 21.1902 23.5223 20.85 22.0968C20.646 21.4858 21.0541 20.807 21.6663 20.6034C22.5506 20.3319 22.8227 19.178 22.1425 18.4992L20.2378 16.5986C19.6937 16.1234 18.8774 16.1234 18.4012 16.5986L17.1088 17.8883C15.8164 19.2459 17.2449 22.8435 20.4419 26.0338C23.639 29.2241 27.2441 30.7175 28.6046 29.3599L29.897 28.0702C30.3732 27.5271 30.3732 26.7126 29.897 26.2374Z" fill="white"/>
+                    </svg>       
+                    <a href="#">+7 (000) 000-00-00</a>           
+                </p>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="column1">
+                <div class="wrapper logo">
+                    <img src="/success/images/service/logo/logo-dark.png" alt="logo"/>
+                    <a href="#">Политика конфиденциальности.</a>
+                </div>
+                <div class="wrapper list">
+                    <h3>Контакты</h3>
+                    <ul class="list">
+                        <li><a href="#">+7 (000) 000-00-00</a></li>
+                        <li><a href="#">info@gmail.com</a></li>
+                        <li>Москва. ул Такая то, д. 8</li>
+                    </ul>
+                </div>
+                <div class="wrapper list">
+                    <h3>Данные</h3>
+                    <ul class="list">
+                        <li>ИНН 10254653878676</li>
+                        <li>ОГРН 12047848786787</li>
+                    </ul>
+                </div>
+                <div class="wrapper button">
+                    <button class="btn-ui-2">Задать вопрос</button>
+                </div>
+            </div>
+            <div class="column2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20719.213219784437!2d23.97140841987614!3d49.524132380138745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473af5ae7be94b5f%3A0xa2bcf62e7bd6c7ae!2z0J3QuNC60L7Qu9Cw0LXQsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1671159663000!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="column3">
+                <span class="title">Все права защищены © 2022</span>
+                <span class="powerd">Сайт разработал: <a href="#">Dmytro Mikhailenko</a></span>
+            </div>
+        </div>
+    </footer>
 
     <script src="success/js/app.js"></script>
 </body>

@@ -21,6 +21,12 @@ body, html{
 
 //btn ui
 
+.btn-ui-none{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
 .btn-ui-1{
     font-weight: 500;
     font-size: 12.7634px;
@@ -43,6 +49,38 @@ body, html{
     padding-left: 100px;
     padding-right: 100px;
     border: solid 1px #000000;
+}
+
+.btn-ui-3{
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24.5161px;
+    line-height: 140%;
+    color: #262626;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #EBCBB2;
+    border: 1.22581px solid #EBCBB2;
+}
+
+.btn-ui-form{
+    width: 100%;
+    height: auto;
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.6891px;
+    line-height: 140%;
+    color: black;
+    transition: .3s ease-in-out;
+    padding: 30px 28px;
+    &::placeholder{
+        color: #D9D9D9;
+    }
+    background: transparent;
+    border: 2px solid #222222;
 }
 
 .btn-ui-scroll{
@@ -131,5 +169,125 @@ header{
                 }
             }
         }
+    }
+}
+
+footer{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    & > .container{
+        & > .column1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 72px;
+            & > .wrapper{
+                &.logo{
+                    & > a{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16.7895px;
+                        line-height: 130%;
+                        text-decoration-line: underline;
+                        color: #DDAE8A;
+                        margin-top: 53px;
+                        display: block;
+                    }
+                    & > img{
+                        max-width: 220px;
+                    }
+                }
+            }
+
+            & > .wrapper{
+                &.list{
+                    & > h3{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 19.188px;
+                        line-height: 130%;
+                        color: #000000;
+                        margin-bottom: 24px;
+                    }
+                    & > .list{
+                        & > li{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16.7895px;
+                            line-height: 120%;
+                            color: #000000;
+                            margin-bottom: 12px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            & > a{
+                                font-family: 'Euclid Circular B';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16.7895px;
+                                line-height: 120%;
+                                color: #000000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & > .column2{
+            margin-bottom: 59px;
+            & > iframe{
+                width: 100%;
+                height: 600px;
+            }
+        }
+        & > .column3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > .title{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16.7895px;
+                line-height: 120%;
+                color: #000000;
+            }
+            & > .powerd{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16.7895px;
+                line-height: 120%;
+                color: #000000;
+                & > a{
+                    color: #E1AA7F;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1600px){
+    .container{
+        max-width: 1160px;
+    }
+
+    .btn-ui-2{
+        padding: 22px 57px;
+        font-size: 20px;
+    }
+
+    .btn-ui-3{
+        padding: 33px 180px;
+        font-size: 20px;
+    }
+}
+@media (max-width:1400px){
+    .container{
+        max-width: 998px;
     }
 }

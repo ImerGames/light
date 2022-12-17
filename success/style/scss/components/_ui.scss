@@ -12,6 +12,10 @@ body, html{
     box-sizing: border-box;
 }
 
+.btn-ui-burger{
+    display: none;
+}
+
 .container{
     width: 100%;
     max-width: 1600px;
@@ -197,9 +201,7 @@ footer{
                         max-width: 220px;
                     }
                 }
-            }
 
-            & > .wrapper{
                 &.list{
                     & > h3{
                         font-family: 'Euclid Circular B';
@@ -232,6 +234,12 @@ footer{
                                 text-decoration: none;
                             }
                         }
+                    }
+                }
+
+                &.button{
+                    & > a{
+                        display: none;
                     }
                 }
             }
@@ -289,5 +297,78 @@ footer{
 @media (max-width:1400px){
     .container{
         max-width: 998px;
+    }
+    footer>.container>.column1{
+        grid-template-columns: repeat(3, 1fr);
+        & > .wrapper.button{
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width:1100px){
+    .container{
+        max-width: 600px;
+    }
+    .btn-ui-1{
+        padding: 16px 20px;
+    }
+    .btn-ui-2{
+        font-size: 14px;
+        padding: 21px 46px;
+    }
+    footer>.container>.column1 > .wrapper.logo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        & > img{
+            max-width: 214px;
+            height: 60px;
+        }
+        & > a{
+            position: relative;
+            bottom: -73px;
+            font-size: 14px;
+        }
+    }
+    
+}
+
+@media (max-width: 640px){
+    .container{
+        max-width: 350px;
+    }
+
+    .btn-ui-burger{
+        display: block;
+    }
+    .btn-ui-3{
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    footer>.container>.column1>.wrapper.button>a{
+        display: block;
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        text-decoration-line: underline;
+        color: #E1AA7F;
+        margin-bottom: 30px;
+    }
+    footer>.container>.column3{
+        display: block;
+        & > span{
+            font-size: 16px;
+            &:first-child{
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
     }
 }

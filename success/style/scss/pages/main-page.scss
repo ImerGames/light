@@ -7,6 +7,10 @@ main.main-page{
             top: 0;
             transform: translateX(-15px);
             z-index: -1;
+            &.bgPreList{
+                top: 100px;
+                max-height: 745px;
+            }
         }
         & > .bg2{
             position:absolute;
@@ -774,6 +778,85 @@ main.main-page{
             }
         }
     }
+    & > .section__what_m{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        & > .container{
+            & > h2{
+                font-family: 'Euclid Circular B';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 120%;
+                color: #000000;
+                margin-bottom: 50px;
+            }
+            & > .container-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 14px;
+                & > .wrapper{
+                    &.full{
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                        display: flex;
+                        align-items: center;
+                        & > img{
+                            max-width: 524px;
+                        }
+                        & > .main{
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            position: relative;
+                            & > button{
+                                position: absolute;
+                                right: 36px;
+                                bottom: 36px;
+                            }
+                            & > h3, & > p{
+                                max-width: 560px;
+                            }
+                        }
+                    }
+                    & > img{
+                        width: 100%;
+                        object-fit: cover;
+                        height: 415px;
+                    }
+                    & > .main{
+                        padding: 36px;
+                        background: #E8DFD9;
+                        & > h3{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 36.6636px;
+                            line-height: 140%;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+                        & > p{
+                            font-family: 'Euclid Circular B';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 29.3309px;
+                            line-height: 140%;
+                            color: #000000;
+                            margin-bottom: 40px;
+                        }
+                        & > button{
+                            display: block;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:1600px){
@@ -882,6 +965,9 @@ main.main-page{
         font-size: 18px;
         padding: 6px 10px;
     }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>p{
+        font-size: 21px;
+    }
 }
 
 @media (max-width:1400px){
@@ -894,8 +980,9 @@ main.main-page{
     }
     main.main-page>.background-images>.bg{
         left: 0;
-        top: 550px;
-        height: 844px;
+        top: 550px !important;
+        height: 844px !important;
+        max-height: 100%;
         width: 100%;
         object-fit: cover;
     }
@@ -971,6 +1058,32 @@ main.main-page{
     }
     main.main-page>.section__team>.container>.container-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>h3{
+        font-size: 26px;
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>p{
+        font-size: 21px;
+        max-width: 305p;
+    }
+    main.main-page>.section__what_m>.container>.container-grid{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 770px;
+        & > .wrapper.full{
+            display: block;
+            grid-column-start: auto;
+            grid-column-end: auto;
+            & > .main{
+                display: block;
+                height: auto;
+                & > button{
+                    position: static;
+                }
+            }
+        }
+    }
+    main.main-page>.section__what_m>.container>h2{
+        font-size: 50px;
     }
 }
 
@@ -1105,6 +1218,27 @@ main.main-page{
             max-width: 491px;
         }
     }   
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>img{
+        height: 234px;
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main{
+        padding: 20px;
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>h3{
+        font-size: 20px;
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>p{
+        font-size: 16px;
+    }
+    main.main-page>.section__what_m>.container>.container-grid>.wrapper>.main>button{
+        & > svg{
+            max-width: 35px;
+        }
+    }
+    main.main-page>.section__what_m>.container>h2{
+        font-size: 40px;
+    }
+
 }
 
 @media (max-width: 640px){
@@ -1123,8 +1257,8 @@ main.main-page{
         }
     }
     main.main-page>.background-images>.bg{
-        top: 738px;
-        height: 362px;
+        top: 738px !important;
+        height: 362px !important;
     }
     main.main-page>.section__main>.container>.header-block{
         padding-bottom: 420px;
@@ -1298,5 +1432,18 @@ main.main-page{
     footer>.container>.column1>.wrapper.button{
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+    main.main-page>.section__what_m>.container>.container-grid{
+        display: block;
+        & > .wrapper{
+            margin-bottom: 35px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    main.main-page>.section__what_m{
+        padding-bottom: 80px;
+        padding-top: 80px;
     }
 }

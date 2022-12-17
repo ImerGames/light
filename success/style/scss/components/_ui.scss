@@ -137,10 +137,32 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         & > .logo > img{
             max-width: 200px;
         }
-        & > .feedback{
+        & > nav{
+            & > .list{
+                display: flex;
+                align-items: center;
+                & > li{
+                    margin-right: 56px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    & > a{
+                        font-family: 'Euclid Circular B';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22.3834px;
+                        line-height: 130%;
+                        color: #000000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        & .feedback{
             display: flex;
             align-items: center;
             & > img{
@@ -173,6 +195,13 @@ header{
                 }
             }
         }
+
+        & > .preList{
+            position: absolute;
+            right: 0;
+            top: 79px;
+        }
+
     }
 }
 
@@ -293,6 +322,13 @@ footer{
         padding: 33px 180px;
         font-size: 20px;
     }
+
+    header>.container>nav>.list>li{
+        margin-right: 50px;
+        & > a{
+            font-size: 19px;
+        }
+    }
 }
 @media (max-width:1400px){
     .container{
@@ -303,6 +339,12 @@ footer{
         & > .wrapper.button{
             margin-top: 60px;
         }
+    }
+    header>.container>.logo>img{
+        max-width: 100px;
+    }
+    header>.container>nav>.list>li>a{
+        font-size: 17px;
     }
 }
 
@@ -333,10 +375,37 @@ footer{
             font-size: 14px;
         }
     }
+
+    header>.container>nav>.list{
+        display: none;
+    }
+
+    header>.container>.preList{
+        position: relative;
+        top:auto;
+        left: auto;
+    }
     
+    header.v2>.container>.btn-ui-burger{
+        display: block;
+        position: absolute;
+        right: 0;
+        top:140px;
+    }
+
 }
 
 @media (max-width: 640px){
+    header.v2>.container>.btn-ui-burger{
+        display: block;
+        position: static;
+    }
+    header>.container .feedback{
+        display: none;
+    }
+    header>.container>.preList{
+        display: none;
+    }
     .container{
         max-width: 350px;
     }
